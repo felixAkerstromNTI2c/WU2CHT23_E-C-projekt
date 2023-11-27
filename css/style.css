@@ -1,0 +1,96 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr;
+    grid-template-rows:50px 1fr;
+    grid-template-areas: 
+    "lis"
+    "mai"
+    ;
+}
+#grid_wrapper{
+    display: grid;
+    height: 180vh;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px minmax(100px);
+
+    grid-template-areas: 
+    "se1 se2 se2"
+    "se3 se3 se4"
+    "se5 se6 se6"
+    "foo foo foo"
+    ;
+}
+
+ul{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+main{
+    grid-area: mai;
+    display: flex;
+    background: black;
+}
+#list{
+    grid-area: lis;
+    display: flex;
+    background: rgb(222, 207, 177);
+}
+section{
+    margin:15px;
+    border-radius: 20px;
+
+}
+
+#section_1{
+grid-area: se1;
+display: flex;
+background: blue
+}
+
+#section_2{
+    grid-area: se2;
+    display: flex;
+    background: rgb(255, 0, 0)
+}
+
+#section_3{
+    grid-area: se3;
+    display: flex;
+    background: rgb(255, 247, 0)
+}
+
+#section_4{
+    grid-area: se4;
+    display: flex;
+    background: rgb(255, 162, 0)
+}
+
+#section_5{
+    grid-area: se5;
+    display: flex;
+    background: rgb(34, 255, 0)
+}
+
+#section_6{
+    grid-area: se6;
+    display: flex;
+    background: rgb(255, 0, 144)
+}
+
+footer{
+    grid-area: foo;
+    display: flex;
+    background: midnightblue;
+}
