@@ -17,10 +17,10 @@
 #grid_wrapper{
     display: grid;
     height: 180vh;
-
+    
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px 300px minmax(100px);
-
+    
     grid-template-areas: 
     "se1 se2 se2"
     "se3 se3 se4"
@@ -28,7 +28,32 @@
     "foo foo foo"
     ;
 }
+#grid_wrapper_products{
+    display: grid;
+    height: 250vh;
 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px 300px minmax(100px);
+
+    grid-template-areas: 
+    "se1 se2 se2"
+    "se3 se3 se4"
+    "se5 se6 se6"
+    "se7 se7 se8"
+    "se9 se10 se10"
+    "foo foo foo"
+    ;
+}
+#grid_wrapper_contacts{
+    display: grid;
+    height: 100vh;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "foo"
+    ;
+}
 ul{
     display: flex;
     width: 100vw;
@@ -85,6 +110,28 @@ background: blue
 
 #section_6{
     grid-area: se6;
+    display: flex;
+    background: rgb(255, 0, 144)
+}
+
+#section_7{
+    grid-area: se7;
+    display: flex;
+    background: rgb(34, 255, 0)
+}
+
+#section_8{
+    grid-area: se8;
+    display: flex;
+    background: rgb(255, 0, 144)
+}
+#section_9{
+    grid-area: se9;
+    display: flex;
+    background: rgb(255, 0, 144)
+}
+#section_10{
+    grid-area: se10;
     display: flex;
     background: rgb(255, 0, 144)
 }
