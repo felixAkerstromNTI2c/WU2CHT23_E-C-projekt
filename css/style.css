@@ -177,6 +177,22 @@ grid-area: se1;
 display: flex;
 background: blue;
 }
+.pictext {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.container_black {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
 /*section2--start---------------------------------------------------------------------------------------------------------*/
 #section_2{
     grid-area: se2;
