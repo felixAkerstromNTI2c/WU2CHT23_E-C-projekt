@@ -12,10 +12,8 @@
 #grid_wrapper{
     display: grid;
     height: 100%;
-    
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px minmax(100px);
-    
+    grid-template-rows: 300px 300px 300px minmax(50px);
     grid-template-areas:
     "lis lis lis"
     "hean hean hean"
@@ -28,10 +26,8 @@
 #grid_wrapper_products{
     display: grid;
     height: 100%;
-
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px 300px 300px minmax(100px);
-
+    grid-template-rows: 300px 300px 300px 300px 300px minmax(50px);
     grid-template-areas: 
     "lis lis lis"
     "hean hean hean"
@@ -147,7 +143,6 @@ ul{
     display: flex;
     background: rgb(255, 255, 255);
     justify-content: center;
-    
 }
 
 #text_contacts{
@@ -175,7 +170,6 @@ section{
 #section_1{
 grid-area: se1;
 display: flex;
-background: blue;
 }
 .pictext {
     position: absolute;
@@ -208,15 +202,12 @@ background: blue;
 }
 #he_2{
     grid-area: he2;
-    background: rgb(52,152,219);
 }
 #im_2{
     grid-area: im2;
-    background: rgb(52,152,219);
 }
 #p_2{
     grid-area: p2;
-    background: rgb(52,152,219);
 }
 
 #prod_section_2{
@@ -233,15 +224,12 @@ background: blue;
 }
 #prod_he_2{
     grid-area: prodhe2;
-    background: rgb(52,152,219);
 }
 #prod_im_2{
     grid-area: prodim2;
-    background: rgb(52,152,219);
 }
 #prod_p_2{
     grid-area: prodp2;
-    background: rgb(52,152,219);
 }
 
 /*Section 3--start--------------------------------------------------------------------------------------------------------*/
@@ -258,15 +246,12 @@ background: blue;
 }
 #he_3{
     grid-area: he3;
-    background: rgb(52,152,219);
 }
 #im_3{
     grid-area: im3;
-    background: rgb(52,152,219);
 }
 #p_3{
     grid-area: p3;
-    background: rgb(52,152,219);
 }
 
 #prod_section_3{
@@ -283,27 +268,23 @@ background: blue;
 }
 #prod_he_3{
     grid-area: prodhe3;
-    background: rgb(52,152,219);
 }
 #prod_im_3{
     grid-area: prodim3;
-    background: rgb(52,152,219);
 }
 #prod_p_3{
     grid-area: prodp3;
-    background: rgb(52,152,219);
+    
 }
 /* section 3--end---------------------------------------------------------------------------------------------------- */
 #section_4{
     grid-area: se4;
     display: flex;
-    background: rgb(52,152,219);
 }
 
 #section_5{
     grid-area: se5;
     display: flex;
-    background: rgb(34, 255, 0);
 }
 /*section 6--start----------------------------------------------------------------------------------------------------*/
 
@@ -320,15 +301,12 @@ background: blue;
 }
 #he_6{
     grid-area: he6;
-    background: rgb(52,152,219);
 }
 #im_6{
     grid-area: im6;
-    background: rgb(52,152,219);
 }
 #p_6{
     grid-area: p6;
-    background: rgb(52,152,219);
 }
 
 #prod_section_6{
@@ -344,15 +322,12 @@ background: blue;
 }
 #prod_he_6{
     grid-area: prodhe6;
-    background: rgb(52,152,219);
 }
 #prod_im_6{
     grid-area: prodim6;
-    background: rgb(52,152,219);
 }
 #prod_p_6{
     grid-area: prodp6;
-    background: rgb(52,152,219);
 }
 /*section6--end-------------------------------------------------------------------------------------------------------*/
 #section_7{
@@ -374,31 +349,25 @@ background: blue;
 }
 #prod_he_7{
     grid-area: prodhe7;
-    background: rgb(52,152,219);
 }
 #prod_im_7{
     grid-area: prodim7;
-    background: rgb(52,152,219);
 }
 #prod_p_7{
     grid-area: prodp7;
-    background: rgb(52,152,219);
 }
 
 #section_8{
     grid-area: se8;
     display: flex;
-    background: rgb(255, 0, 144)
 }
 #section_9{
     grid-area: se9;
     display: flex;
-    background: rgb(255, 0, 144)
 }
 #section_10{
     grid-area: se10;
     display: flex;
-    background: rgb(255, 0, 144)
 }
 #prod_section_10{
     grid-area: se10;
@@ -414,15 +383,12 @@ background: blue;
 }
 #prod_he_10{
     grid-area: prodhe10;
-    background: rgb(52,152,219);
 }
 #prod_im_10{
     grid-area: prodim10;
-    background: rgb(52,152,219);
 }
 #prod_p_10{
     grid-area: prodp10;
-    background: rgb(52,152,219);
 }
 
 
@@ -431,11 +397,14 @@ footer{
     display: flex;
     background: rgb(52,152,219);
     width: 100%;
-    height: 150px;
+    height: 60px;
+    align-items: flex-end;
+    font-size: 1rem;
 }
 #contact_footer{
     grid-area: cfo;
     display: flex;
+    align-items: normal;
     background: rgb(52,152,219);
     height: 350px;
     width: 100%;
@@ -487,6 +456,7 @@ footer{
     grid-area: p;
     margin: 0px;
     text-align: start;
+    font-size: 1rem;
 }
 /*#contact_top{
     grid-area: cto;
@@ -527,7 +497,7 @@ header{
     text-align: center;
 }
 section:hover{
-    transform: scale(103%);
+    transform: scale(1.03);
 }
 
 li{
@@ -536,7 +506,6 @@ li{
     background: rgb(219,119,52);
     text-align: center;
     border-radius: 10px;
-    
 }
 a{
     text-decoration: none;
